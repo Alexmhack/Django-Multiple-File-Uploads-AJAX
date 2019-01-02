@@ -4,9 +4,15 @@
 {% block content %}
 
 	{# 1. BUTTON TO TRIGGER THE ACTION #}
-	<button type="button" class="mt-5 mb-3 btn btn-primary" id="js-upload-photos">
+	<!-- <button type="button" class="mt-5 mb-3 btn btn-primary" id="js-upload-photos">
 	  <span class="glyphicon glyphicon-cloud-upload"></span> Upload photos
-	</button>
+	</button> -->
+
+	{# drag and drop files to upload #}
+	<div class="well text-muted text-center" style="padding-top: 4rem; padding-bottom: 4rem;">
+	  <span class="glyphicon glyphicon-arrow-down" style="font-size: 4rem;"></span>
+	  <h3>Drop Photos Here to Upload</h3>
+	</div>
 
 	{# 2. FILE INPUT TO BE USED BY THE PLUG-IN #}
 	{# name="model field name = file in models.py" #}
@@ -30,6 +36,22 @@
 	    {% endfor %}
 	  </tbody>
 	</table>
+
+	{# progress bar for showing upload progress of files #}
+	<div class="modal fade" id="modal-progress" data-backdrop="static" data-keyboard="false">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h4 class="modal-title">Uploading...</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="progress">
+	          <div class="progress-bar" role="progressbar" style="width: 0%;">0%</div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 {% endblock %}
 

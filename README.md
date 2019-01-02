@@ -144,4 +144,4 @@ In ```GET``` request to our url we simple pass all the photos in the context and
 Also the frontend javascript is in **static/jquery/js/basic_upload.js** file which opens 
 the windows explorer and initiate the file uploading process.
 
-For any doubts or queries, start a issue in the repo. Will contact soon.
+**For any doubts or queries, start a issue in the repo. Will contact soon.**

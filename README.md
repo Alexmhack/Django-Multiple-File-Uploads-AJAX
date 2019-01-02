@@ -1,6 +1,19 @@
 # Django-Multiple-File-Uploads-AJAX
 Uploading multiple files to django model using ajax and jQuery plugin
 
+## Usage
+1. Run the django server 
+	```python manage.py runserver``` from the root folder of repo
+
+2. Open [http://127.0.0.1:8000/photos/basic-upload/](http://127.0.0.1:8000/photos/basic-upload/)
+
+3. Hit the upload photo button and select as many **images** you need to upload and hit open button
+
+4. The uploaded images will be listed in the table below with their apropriate links, click
+	the link and you get the image displayed.
+
+5. The images are uploaded to **media/{current year}/{current month}/{current date}/**
+
 ## Installation
 In any existing Django project configure the settings for the media files by adding
 
@@ -143,5 +156,8 @@ In ```GET``` request to our url we simple pass all the photos in the context and
 
 Also the frontend javascript is in **static/jquery/js/basic_upload.js** file which opens 
 the windows explorer and initiate the file uploading process.
+
+Run the server and click the **upload photos** button and select as many images you want to 
+upload and press **open** and the file data will show up in the table.
 
 For any doubts or queries, start a issue in the repo. Will contact soon.

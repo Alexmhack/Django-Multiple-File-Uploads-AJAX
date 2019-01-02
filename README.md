@@ -160,6 +160,7 @@ the windows explorer and initiate the file uploading process.
 Run the server and click the **upload photos** button and select as many images you want to 
 upload and press **open** and the file data will show up in the table.
 
-There is also code for drag and drop files upload and a progress bar that shows file uploading progress.
+There is also code for drag and drop files upload and a progress bar that shows file 
+uploading progress.
 
-**For any doubts or queries, start a issue in the repo. Will contact soon.**
+For any doubts or queries, start a issue in the repo. Will contact soon.
